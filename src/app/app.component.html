@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    <div class="alert alert-primary" role="alert">
+        Counter: {{ counter$ | async }}
+    </div>
+    <img width="300" (click)="increment()" src="http://www.greatamericancookies.com/app/themes/greatamericancookies/library/images/home/carousel1.png">
+</div>
+
+<ul class="list-group">
+    <app-cursor [canBuy]="canBuyCursor$ | async" (buyCursor)="buycursor()"></app-cursor>
+</ul>

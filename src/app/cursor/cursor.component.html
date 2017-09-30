@@ -1,0 +1,4 @@
+<li class="list-group-item" [ngClass]="{'list-group-item-warning': canBuy}" (click)="buyCursorWhenIsPossible()">
+    <span *ngIf="!canBuy">Buy a cursor when you achieve at least 10 cookies! </span>
+    <span *ngIf="canBuy">Buy a cursor! Eat 3 cookies!!!</span>
+</li>
